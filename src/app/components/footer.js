@@ -1,4 +1,9 @@
 import './footer.css'
+/**
+ * Sets the content of the site footer.
+ *
+ * @return {void} No return value
+ */
 export function siteFooter(){
 document.querySelector('#footer').innerHTML = `
 <div class="footer">
@@ -60,8 +65,6 @@ document.querySelector('#footer').innerHTML = `
   © Copyright 2022. Made by Elias
 </div>
 </div>
-
-  
         </div>
         `
 }

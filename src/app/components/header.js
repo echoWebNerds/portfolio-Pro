@@ -1,5 +1,10 @@
 import "./header.css";
-export function siteHeader(test){
+/**
+ * Sets the content of the site header.
+ *
+ * @return {void} No return value
+ */
+export function siteHeader(){
 document.querySelector('#header').innerHTML = `
 <div class="header">
 <div class="frame-40">
