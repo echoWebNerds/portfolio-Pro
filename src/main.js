@@ -1,8 +1,10 @@
-import './style.css'
+import './main.css'
 import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
-
+import viteLogo from './vite.svg'
+import { setupCounter } from './app/components/counter.js'
+import { siteHeader } from './app/components/header.js' 
+import { siteFooter } from './app/components/footer.js'
+import { siteProjects } from './app/components/projects.js' 
 document.querySelector('#app').innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
@@ -21,6 +23,9 @@ document.querySelector('#app').innerHTML = `
     </p>
   </div>
 `
-
+ 
 setupCounter(document.querySelector('#counter'))
 setupCounter(document.querySelector('#counter2'))
+siteHeader()
+siteProjects()
+siteFooter()
